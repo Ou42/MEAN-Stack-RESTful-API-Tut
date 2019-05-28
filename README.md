@@ -13,3 +13,4 @@ Node | 0.10.35 | 10.15.3 | https://nodejs.org
 * Step 0: Install Git - https://git-scm.com/downloads
 * Step 1: Install Node - https://nodejs.org
 * Step 2: Create 'contactlistapp' folder
+* Step 3: Create 'server.js' inside 'contactlistapp' folder

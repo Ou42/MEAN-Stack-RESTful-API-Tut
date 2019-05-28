@@ -9,6 +9,7 @@ Software | Version in Video Tut | Ver I Installed | URL/cmd
 Git | 1.9.5 | 2.21.0-64-bit | https://git-scm.com/downloads
 Node | 0.10.35 | 10.15.3 | https://nodejs.org
 Express | 4.11.0 | 4.17.1 | npm install express
+AngularJS | 1.2.28 | 1.7.8 | copy cdn from angularjs.org
 
 
 * Step 0: Install Git - https://git-scm.com/downloads
@@ -25,3 +26,4 @@ Express | 4.11.0 | 4.17.1 | npm install express
 * Step 11: Create 'public' sub-folder (part 2)
 * Step 12: Create index.html (part 3)
 * Step 13: Edit index.html (part 4) & test our server
+* Step 14: Load AngularJS in index.html

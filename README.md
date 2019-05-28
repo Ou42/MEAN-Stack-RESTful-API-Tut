@@ -1,6 +1,6 @@
 # MEAN-Stack-RESTful-API-Tut
-My attempt to follow &amp; update the 43 Step YT tutorial:
-MEAN Stack RESTful API Tutorial Playlist
+My attempt to follow &amp; update the 43 Step YT tutorial:  
+## MEAN Stack RESTful API Tutorial Playlist  
 https://www.youtube.com/playlist?list=PLX2HoWE32I8Nkzw2TqcifObuhgJZz8a0U
 
 
@@ -12,3 +12,4 @@ Node | 0.10.35 | 10.15.3 | https://nodejs.org
 
 * Step 0: Install Git - https://git-scm.com/downloads
 * Step 1: Install Node - https://nodejs.org
+* Step 2: Create 'contactlistapp' folder

@@ -12,13 +12,14 @@ Express | 4.11.0 | 4.17.1 | npm install express
 
 
 * Step 0: Install Git - https://git-scm.com/downloads
-* Step  1: Install Node - https://nodejs.org
-* Step  2: Create 'contactlistapp' folder
-* Step  3: Create 'server.js' inside 'contactlistapp' folder
-* Step  4: Install text editor (he used Sublime. I'm using VS Code)
-* Step  5: Open CMD prompt (Git Bash)
-* Step  6: Navigate to 'contactlistapp' folder
-* Step  7: Install express via npm
-* Step  8: require('express') ...
-* Step  9: Test our server
+* Step 1: Install Node - https://nodejs.org
+* Step 2: Create 'contactlistapp' folder
+* Step 3: Create 'server.js' inside 'contactlistapp' folder
+* Step 4: Install text editor (he used Sublime. I'm using VS Code)
+* Step 5: Open CMD prompt (Git Bash)
+* Step 6: Navigate to 'contactlistapp' folder
+* Step 7: Install express via npm
+* Step 8: require('express') ...
+* Step 9: Test our server
 * Step 10: Setup HTML template (part 1)
+* Step 11: Create 'public' sub-folder (part 2)

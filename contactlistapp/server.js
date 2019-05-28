@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-// STEP 10
+// STEP 10 - 13
 app.use(express.static(__dirname + "/public"));
 
 app.listen(3000);

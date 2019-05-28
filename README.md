@@ -20,3 +20,4 @@ Express | 4.11.0 | 4.17.1 | npm install express
 * Step 6: Navigate to 'contactlistapp' folder
 * Step 7: Install express via npm
 * Step 8: require('express') ...
+* Step 9: Test our server

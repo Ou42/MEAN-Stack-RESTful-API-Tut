@@ -23,3 +23,4 @@ Express | 4.11.0 | 4.17.1 | npm install express
 * Step 9: Test our server
 * Step 10: Setup HTML template (part 1)
 * Step 11: Create 'public' sub-folder (part 2)
+* Step 12: Create index.html (part 3)

@@ -14,3 +14,4 @@ Node | 0.10.35 | 10.15.3 | https://nodejs.org
 * Step 1: Install Node - https://nodejs.org
 * Step 2: Create 'contactlistapp' folder
 * Step 3: Create 'server.js' inside 'contactlistapp' folder
+* Step 4: Install text editor (he used Sublime. I'm using VS Code)

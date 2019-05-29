@@ -31,3 +31,4 @@ bootstrap | 3.3.1 | 4.3.1 | copy cdn from https://getbootstrap.com/
 * Step 15: Use & test angularjs
 * Step 16: Load bootstrap in index.html
 * Step 17: Test bootstrap
+* Step 18: Create general layout

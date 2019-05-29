@@ -10,6 +10,7 @@ Git | 1.9.5 | 2.21.0-64-bit | https://git-scm.com/downloads
 Node | 0.10.35 | 10.15.3 | https://nodejs.org
 Express | 4.11.0 | 4.17.1 | npm install express
 AngularJS | 1.2.28 | 1.7.8 | copy cdn from https://angularjs.org
+bootstrap | 3.3.1 | 4.3.1 | copy cdn from https://getbootstrap.com/
 
 
 * Step 0: Install Git - https://git-scm.com/downloads
@@ -28,3 +29,4 @@ AngularJS | 1.2.28 | 1.7.8 | copy cdn from https://angularjs.org
 * Step 13: Edit index.html (part 4) & test our server
 * Step 14: Load AngularJS in index.html
 * Step 15: Use & test angularjs
+* Step 16: Load bootstrap in index.html

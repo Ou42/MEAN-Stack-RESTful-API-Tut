@@ -1,13 +1,17 @@
 <!DOCTYPE>
 <html ng-app>
 <head>
+    <!-- Step 16: Load bootstrap via cdn link -->
+    <!-- Step 16 continued: only bootstrap as the optional theme link wasn't there -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Contact List App</title>
 </head>
 <body>
     <h1>Contact List App</h1>
+
     <input ng-model="test">
     {{test}}
-    
+
     <!-- Step 14: Load angularjs via cdn link -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 </body>

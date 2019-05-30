@@ -34,3 +34,4 @@ bootstrap | 3.3.1 | 4.3.1 | copy cdn from https://getbootstrap.com/
 * Step 18: Create general layout
 * Step 19: Create controller
 * Step 20: Connect controller.js file with index.html file - NOT WORKING
+* Step 20b: Register the controller ( fix for Step 20 )

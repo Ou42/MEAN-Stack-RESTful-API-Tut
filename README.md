@@ -39,3 +39,4 @@ bootstrap | 3.3.1 | 4.3.1 | copy cdn from https://getbootstrap.com/
 * Step 22: Put dummy data into table
 * Step 23: Retrieve dummy data from server
 * Step 23b: Actually retrieve dummy data from server - error: success is not a function
+* Step 23c: Actually retrieve dummy data from server - FIXED

@@ -1,15 +1,51 @@
-// Step 23b: Create dummy Data for testing
+/*
+ * // Step 23c: Actually retrieve dummy data from server - FIXED
+ * 
+ * // success() func deprecated
+ * // using then() function in lieu of success()
+ * // per: stackoverflow.com/questions/33531336
+ *          /angularjs-error-success-is-not-a-function#33531521
+ * 
+ * 
+ ****************************************************************************/
+
 var app = angular.module('myApp', []);
 
 app.controller('AppCtrl', function ($scope, $http) {
-  console.log("Hello world from controller");
+    console.log("Hello world from controller");
 
-  // route
-  $http.get('/contactlist').success(function(response) {
+    // route
+    // $http.get('/contactlist').success(function(response) {
+    $http.get('/contactlist').then(function(response) {
         console.log("I got the data I requested");
-        $scope.contactlist = response;
-  });
+
+        // per console.log(response); (error msg) & SO post:
+        //   https://stackoverflow.com/questions/41747485
+        //   /cant-get-the-data-from-my-databasemongodb-to-output-on-my-site#
+        //  ".success is a shortcut, but normally .get returns
+        //      a promise that you use with .then"
+        //  and, "here, response has a status, data and error field"
+        $scope.contactlist = response.data; // changed from ... = response;
+        console.log(response.data); // test -  changed from ... (response);
+    });
 });
+
+/* 
+ * // Step 23b: Actually retrieve dummy data from server
+ *      - error: success is not a function
+ * 
+ * var app = angular.module('myApp', []);
+ * 
+ * app.controller('AppCtrl', function ($scope, $http) {
+ *   console.log("Hello world from controller");
+ * 
+ *   // route
+ *   $http.get('/contactlist').success(function(response) {
+ *         console.log("I got the data I requested");
+ *         $scope.contactlist = response;
+ *   });
+ * });
+ ********************************************************************/
 
 /*
  * Step 21: Create dummy Data for testing

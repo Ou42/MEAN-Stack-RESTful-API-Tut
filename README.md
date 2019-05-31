@@ -37,3 +37,4 @@ bootstrap | 3.3.1 | 4.3.1 | copy cdn from https://getbootstrap.com/
 * Step 20b: Register the controller ( fix for Step 20 )
 * Step 21: Create dummy data for testing
 * Step 22: Put dummy data into table
+* Step 23: Retrieve dummy data from server

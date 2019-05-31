@@ -19,6 +19,14 @@
                     <th>Number</th>
                 </tr>
             </thead>
+            <!-- Step 22: Put dummy data into table -->
+            <tbody>
+                <tr ng-repeat="contact in contactlist">
+                    <td>{{contact.name}}</td>
+                    <td>{{contact.email}}</td>
+                    <td>{{contact.number}}</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 

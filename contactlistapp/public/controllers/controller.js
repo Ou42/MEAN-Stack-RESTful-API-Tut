@@ -1,4 +1,4 @@
-// Step 21: Dummy Data for testing
+// Step 21: Create dummy Data for testing
 var app = angular.module('myApp', []);
 
 app.controller('AppCtrl', function ($scope) {
@@ -23,7 +23,8 @@ app.controller('AppCtrl', function ($scope) {
   };
 
   var contactlist = [person1, person2, person3];
-
+  // Step 22: Put dummy data into table
+  $scope.contactlist = contactlist;
 });
 
 

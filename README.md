@@ -11,6 +11,7 @@ Node | 0.10.35 | 10.15.3 | https://nodejs.org
 Express | 4.11.0 | 4.17.1 | npm install express
 AngularJS | 1.2.28 | 1.7.8 | copy cdn from https://angularjs.org
 bootstrap | 3.3.1 | 4.3.1 | copy cdn from https://getbootstrap.com/
+mongoDB | 2.6.7 | 4.0.9 | https://mongodb.org 
 
 
 * Step 0: Install Git - https://git-scm.com/downloads
@@ -40,3 +41,4 @@ bootstrap | 3.3.1 | 4.3.1 | copy cdn from https://getbootstrap.com/
 * Step 23: Retrieve dummy data from server
 * Step 23b: Actually retrieve dummy data from server - error: success is not a function
 * Step 23c: Actually retrieve dummy data from server - FIXED
+* Step 24: Install MongoDB

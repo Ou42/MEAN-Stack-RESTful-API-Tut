@@ -47,3 +47,4 @@ mongojs | 0.18.0 | 2.6.0 | npm install mongojs
 * Step 26: Add data to mongodb
 * Step 27: Install mongojs
 * Step 28: require('mongojs') ...
+* Step 29: Get data from mongodb with a GET request

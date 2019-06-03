@@ -49,6 +49,11 @@ app.get('/contactlist', function(req, res) {
 app.post('/contactlist', function (req, res) {
   console.log(req.body);  // but won't work
                           // w/o bodyparser installed
+  // Step 33: Insert data into mongo db
+  //  ... and return it to controller with 'res.json(doc)'
+  db.contactlist.insert(req.body, function(err, doc) {
+    res.json(doc);
+  });
 });
 
 app.listen(3000);

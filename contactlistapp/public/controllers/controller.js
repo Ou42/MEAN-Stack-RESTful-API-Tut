@@ -28,6 +28,11 @@ app.controller('AppCtrl', function ($scope, $http) {
         $scope.contactlist = response.data; // changed from ... = response;
         console.log(response.data); // test -  changed from ... (response);
     });
+
+    // Step 31: Define and test the addContact() function
+    $scope.addContact = function() {
+        console.log($scope.contact); // send to console contents of the input boxes
+    };
 });
 
 /* 

@@ -5,6 +5,10 @@ var app = express();
 var mongojs = require('mongojs'); // require mongojs module
 var db = mongojs('contactlist', ['contactlist']); // database & collection we'll be using
 
+// STEP 32
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
 // STEP 23
 app.use(express.static(__dirname + "/public"));
 
@@ -39,6 +43,12 @@ app.get('/contactlist', function(req, res) {
         console.log(docs);
         res.json(docs);
     });
+});
+
+// Step 32: Send data to the server
+app.post('/contactlist', function (req, res) {
+  console.log(req.body);  // but won't work
+                          // w/o bodyparser installed
 });
 
 app.listen(3000);

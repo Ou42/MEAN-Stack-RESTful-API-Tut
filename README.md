@@ -13,6 +13,7 @@ AngularJS | 1.2.28 | 1.7.8 | copy cdn from https://angularjs.org
 bootstrap | 3.3.1 | 4.3.1 | copy cdn from https://getbootstrap.com/
 mongoDB | 2.6.7 | 4.0.9 | https://mongodb.org
 mongojs | 0.18.0 | 2.6.0 | npm install mongojs
+body-parser | 1.10.1 | 1.19.0 | npm install body-parser
 
 
 * Step 0: Install Git - https://git-scm.com/downloads
@@ -50,3 +51,4 @@ mongojs | 0.18.0 | 2.6.0 | npm install mongojs
 * Step 29: Get data from mongodb with a GET request
 * Step 30: Prep index.html to allow inputting data
 * Step 31: Define and test the addContact() function
+* Step 32: Send data to the server - install body-parser

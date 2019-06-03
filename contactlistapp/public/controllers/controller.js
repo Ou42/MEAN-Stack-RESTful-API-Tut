@@ -32,6 +32,8 @@ app.controller('AppCtrl', function ($scope, $http) {
     // Step 31: Define and test the addContact() function
     $scope.addContact = function() {
         console.log($scope.contact); // send to console contents of the input boxes
+        // Step 32: Send data to the server
+        $http.post('/contactlist', $scope.contact);
     };
 });
 

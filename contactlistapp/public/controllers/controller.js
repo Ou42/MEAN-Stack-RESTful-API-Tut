@@ -33,7 +33,14 @@ app.controller('AppCtrl', function ($scope, $http) {
     $scope.addContact = function() {
         console.log($scope.contact); // send to console contents of the input boxes
         // Step 32: Send data to the server
-        $http.post('/contactlist', $scope.contact);
+        // $http.post('/contactlist', $scope.contact);
+
+        // Step 34: Test to make sure controller receives data from db
+        //    see above about .sucess() function being deprecated
+        //    $http.post('/contactlist', $scope.contact).success(function(response) {
+            $http.post('/contactlist', $scope.contact).then(function(response) {
+                console.log(response.data);
+        });
     };
 });
 

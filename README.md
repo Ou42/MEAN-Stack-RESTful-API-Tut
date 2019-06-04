@@ -53,3 +53,4 @@ body-parser | 1.10.1 | 1.19.0 | npm install body-parser
 * Step 31: Define and test the addContact() function
 * Step 32: Send data to the server - install body-parser
 * Step 33: Insert data into mongo db
+* Step 34: Test to make sure controller receives data from db

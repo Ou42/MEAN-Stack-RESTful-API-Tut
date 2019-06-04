@@ -14,20 +14,33 @@ var app = angular.module('myApp', []);
 app.controller('AppCtrl', function ($scope, $http) {
     console.log("Hello world from controller");
 
-    // route
-    // $http.get('/contactlist').success(function(response) {
-    $http.get('/contactlist').then(function(response) {
-        console.log("I got the data I requested");
+    // Step 34 Part 2: Automatically refresh contactlist
+    //      by creating a function containing $http.get()
+    //      and simply calling it when we want to refresh the page
+    var refresh = function() {
+        // $http.get('/contactlist').success(function(response) {
+        $http.get('/contactlist').then(function(response) {
+            // '/contactlist' is a route
+            console.log("I got the data I requested");
 
-        // per console.log(response); (error msg) & SO post:
-        //   https://stackoverflow.com/questions/41747485
-        //   /cant-get-the-data-from-my-databasemongodb-to-output-on-my-site#
-        //  ".success is a shortcut, but normally .get returns
-        //      a promise that you use with .then"
-        //  and, "here, response has a status, data and error field"
-        $scope.contactlist = response.data; // changed from ... = response;
-        console.log(response.data); // test -  changed from ... (response);
-    });
+            // per console.log(response); (error msg) & SO post:
+            //   https://stackoverflow.com/questions/41747485
+            //   /cant-get-the-data-from-my-databasemongodb-to-output-on-my-site#
+            //  ".success is a shortcut, but normally .get returns
+            //      a promise that you use with .then"
+            //  and, "here, response has a status, data and error field"
+            $scope.contactlist = response.data; // changed from ... = response;
+
+            // console.log(response.data); // test -  changed from ... (response);
+            
+            // Step 34 Part 2 continued - clear out the text input boxes:
+            $scope.contact = null;  // vs "" which was in the video. TY to Dmitry Tarashkevich
+                                    // who posted a comment to the video with this solution.
+        });
+    };
+
+    // Step 34 Part 2 continued...
+    refresh();
 
     // Step 31: Define and test the addContact() function
     $scope.addContact = function() {
@@ -36,10 +49,12 @@ app.controller('AppCtrl', function ($scope, $http) {
         // $http.post('/contactlist', $scope.contact);
 
         // Step 34: Test to make sure controller receives data from db
-        //    see above about .sucess() function being deprecated
+        //    see above about .success() function being deprecated
         //    $http.post('/contactlist', $scope.contact).success(function(response) {
             $http.post('/contactlist', $scope.contact).then(function(response) {
                 console.log(response.data);
+                // Step 34 Part 2 continued...
+                refresh();
         });
     };
 });

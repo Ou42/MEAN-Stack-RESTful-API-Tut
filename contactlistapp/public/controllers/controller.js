@@ -95,6 +95,10 @@ app.controller('AppCtrl', function ($scope, $http) {
         });
     };
 
+    // Step 43: Fix uneditable contact after adding edited contact (aka glitch)
+    $scope.deselect = function () {
+        $scope.contact = null; // vs "" which was in the video. TY to Dmitry Tarashkevich
+    }
 });
 
 

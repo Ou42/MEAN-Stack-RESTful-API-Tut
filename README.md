@@ -63,3 +63,4 @@ body-parser | 1.10.1 | 1.19.0 | npm install body-parser
 * Step 40: Define edit() function
 * Step 41: Define update() function
 * Step 42 Part 1: Use put request to send data to db to update contact
+* Step 42 Part 2: Use put request to send data to db to update contact

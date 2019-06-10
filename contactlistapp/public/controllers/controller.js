@@ -85,8 +85,14 @@ app.controller('AppCtrl', function ($scope, $http) {
     // Step 41: Define update() function
     $scope.update = function() {
         console.log($scope.contact._id);
+
         // Step 42 Part 1: Use put request to send data to db to update contact
-        $http.put('/contactlist/' + $scope.contact._id, $scope.contact)
+        // $http.put('/contactlist/' + $scope.contact._id, $scope.contact);
+
+        // Step 42 Part 2: Use put request to send data to db to update contact 
+        $http.put('/contactlist/' + $scope.contact._id, $scope.contact).then(function(response) {
+            refresh();
+        });
     };
 
 });

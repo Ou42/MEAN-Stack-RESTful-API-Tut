@@ -79,6 +79,12 @@ app.get('/contactlist/:id', function (req, res) {
 app.put('/contactlist/:id', function (req, res) {
   var id = req.params.id;
   console.log(req.body.name);
+  // Step 42 Part 1: Use put request to send data to db to update contact
+  db.contactlist.findAndModify({query: {_id: mongojs.ObjectID(id)}, 
+    update: {$set: {name: req.body.name, email: req.body.email, number: req.body.number}},
+    new: true}, function (err, doc) {
+      res.json(doc);
+    });
 });
 
 app.listen(3000);

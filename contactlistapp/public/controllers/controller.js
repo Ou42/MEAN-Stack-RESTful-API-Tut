@@ -51,13 +51,22 @@ app.controller('AppCtrl', function ($scope, $http) {
         // Step 34: Test to make sure controller receives data from db
         //    see above about .success() function being deprecated
         //    $http.post('/contactlist', $scope.contact).success(function(response) {
-            $http.post('/contactlist', $scope.contact).then(function(response) {
-                console.log(response.data);
-                // Step 34 Part 2 continued...
-                refresh();
+        $http.post('/contactlist', $scope.contact).then(function(response) {
+            console.log(response.data);
+            // Step 34 Part 2 continued...
+            refresh();
         });
     };
+
+    // Step 36: Define & Test remove() Funtion
+    $scope.remove = function(id) {
+        console.log(id);
+    };
+
 });
+
+
+
 
 /* 
  * // Step 23b: Actually retrieve dummy data from server

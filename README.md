@@ -57,3 +57,4 @@ body-parser | 1.10.1 | 1.19.0 | npm install body-parser
 * Step 34 Part 2: Automatically refresh contactlist
 * Step 35: Add Remove btns next to contacts
 * Step 36: Define & Test remove() Funtion
+* Step 37: Send $http.delete() to server

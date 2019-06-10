@@ -61,6 +61,8 @@ app.controller('AppCtrl', function ($scope, $http) {
     // Step 36: Define & Test remove() Funtion
     $scope.remove = function(id) {
         console.log(id);
+        // Step 37: Send $http.delete() to server
+        $http.delete('/contactlist/' + id);
     };
 
 });

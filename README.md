@@ -59,3 +59,4 @@ body-parser | 1.10.1 | 1.19.0 | npm install body-parser
 * Step 36: Define & Test remove() Funtion
 * Step 37: Send $http.delete() to server
 * Step 38: Delete contact from mongo db database
+* Step 39: Add Edit & Update buttons

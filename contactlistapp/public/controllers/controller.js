@@ -82,6 +82,11 @@ app.controller('AppCtrl', function ($scope, $http) {
         });
     };
 
+    // Step 41: Define update() function
+    $scope.update = function() {
+        console.log($scope.contact._id);
+    };
+
 });
 
 

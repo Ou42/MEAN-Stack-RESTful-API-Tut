@@ -75,6 +75,11 @@ app.get('/contactlist/:id', function (req, res) {
   });
 });
 
+// Step 42 Part 1: Use put request to send data to db to update contact
+app.put('/contactlist/:id', function (req, res) {
+  var id = req.params.id;
+  console.log(req.body.name);
+});
 
 app.listen(3000);
 console.log("Server running on port 3000");

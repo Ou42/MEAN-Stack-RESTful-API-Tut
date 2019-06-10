@@ -66,6 +66,16 @@ app.delete('/contactlist/:id', function(req, res) {
   });
 });
 
+// Step 40: Define edit() function
+app.get('/contactlist/:id', function (req, res) {
+  var id = req.params.id;
+  console.log(id);
+  db.contactlist.findOne({_id: mongojs.ObjectID(id)}, function (err, doc) {
+    res.json(doc);
+  });
+});
+
+
 app.listen(3000);
 console.log("Server running on port 3000");
 

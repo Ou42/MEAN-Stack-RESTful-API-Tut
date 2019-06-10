@@ -74,6 +74,14 @@ app.controller('AppCtrl', function ($scope, $http) {
         });
     };
 
+    // Step 40: Define edit() function
+    $scope.edit = function(id) {
+        console.log(id);
+        $http.get('/contactlist/' + id).then(function(response) {
+            $scope.contact = response.data;
+        });
+    };
+
 });
 
 
